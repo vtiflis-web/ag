@@ -1,6 +1,9 @@
 # საერთო წესები ყველა Routine-ისთვის
 
-1. **მომზადება:** რეპოზიტორია `vtiflis-web/ag`, ბრანჩი `claude/facebook-page-setup-58huzi`. თუ სესიაში ეს ბრანჩი არ არის, `git fetch origin claude/facebook-page-setup-58huzi && git checkout claude/facebook-page-setup-58huzi`. წაიკითხე `.claude/skills/agromart/SKILL.md` და მიჰყევი.
+1. **მომზადება:** საჭიროა რეპოზიტორია `vtiflis-web/ag`, ბრანჩი `claude/facebook-page-setup-58huzi`.
+   - თუ სამუშაო საქაღალდეში რეპოზიტორია უკვე არის: `git fetch origin claude/facebook-page-setup-58huzi && git checkout claude/facebook-page-setup-58huzi`.
+   - თუ არ არის: გამოიძახე `add_repo` (owner `vtiflis-web`, repo `ag`), შემდეგ შეასრულე მის მიერ დაბრუნებული clone ბრძანება და checkout ზემოთ მითითებულ ბრანჩზე.
+   - შემდეგ წაიკითხე `.claude/skills/agromart/SKILL.md` და მიჰყევი. Claude Docs-ის დოკუმენტების ასლები: `agent/context/` (connector-ები Routine-ში არ არის).
 2. **ენა და ფორმა:** ქართული, ცხრილები, მოკლედ. ყოველ ციფრს: წყარო (ბმული) + თარიღი + ტეგი A/B/C/D.
 3. **არ მოიგონო:** ვერ მოიძიე → „მონაცემი ვერ დავადასტურე“.
 4. **გარე ქმედება აკრძალულია:** არაფერი გამოაქვეყნო, არავის მისწერო, ფორმა არ შეავსო, არაფერი იყიდო. არტეფაქტებს მხოლოდ კითხულობ, თუ ინსტრუქცია პირდაპირ სხვას არ ამბობს.

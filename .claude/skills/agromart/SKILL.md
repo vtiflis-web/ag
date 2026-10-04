@@ -91,4 +91,5 @@ description: Single source of truth for the owner's agro businesses (agromart.ge
 | `supabase/functions/agro-chat/` | ბოტის edge function; `prompt.ts` = ბოტის წესები და ცოდნა |
 | `supabase/migrations/` | `chat_logs` |
 | `facebook/` | FB გვერდის პაკეტი, Cover/Profile, 9 პოსტი |
-| `agent/` | ავტონომიური აგენტი: არქიტექტურა, Routines-ის ინსტრუქციები, ანგარიშების ფორმატი |
+| `agent/` | ავტონომიური აგენტი: არქიტექტურა, Routines-ის ინსტრუქციები |
+| `agent/context/` | Claude Docs-ის დოკუმენტების ასლები (FreshCut ბრიფი, GHF კამპანია) |
