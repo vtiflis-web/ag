@@ -25,7 +25,7 @@
 | Page name | **აგრომარტი • agromart.ge** |
 | Username | **@agromart.ge** (დაკავებულია → `@agromartge`) |
 | Category | Garden Center · Shopping & Retail · Agricultural Service |
-| Website | https://agromart.ge |
+| Website | https://shop.agromart.ge (Meta-ს რეკლამის ბმულები: `#flowers`, `#herbs` და სხვ.) |
 | Email | info@agromart.ge |
 | Phone / WhatsApp | `[+995 ...]` |
 | Hours | ორშ–შაბ, 10:00–19:00 |

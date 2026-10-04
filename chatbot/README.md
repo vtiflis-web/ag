@@ -40,7 +40,7 @@ supabase db push
 
 # 3. საიდუმლოები
 supabase secrets set ANTHROPIC_API_KEY=sk-ant-...
-supabase secrets set ALLOWED_ORIGINS=https://agromart.ge,https://www.agromart.ge
+supabase secrets set ALLOWED_ORIGINS=https://shop.agromart.ge,https://agromart.ge,https://www.agromart.ge
 # არასავალდებულო: AGRO_MODEL=claude-sonnet-5-5 (2× იაფი), AGRO_EFFORT=low|medium
 
 # 4. ფუნქცია (JWT-ის გარეშე: საიტი ანონიმურად იძახებს, დაცვა CORS-ითა და limit-ით)

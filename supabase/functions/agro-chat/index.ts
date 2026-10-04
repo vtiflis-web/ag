@@ -3,7 +3,7 @@
 // → text/plain stream of the assistant's answer.
 //
 // Secrets (supabase secrets set ...): ANTHROPIC_API_KEY, ALLOWED_ORIGINS
-// ("https://agromart.ge,https://www.agromart.ge"). Optional: AGRO_MODEL, AGRO_EFFORT.
+// ("https://shop.agromart.ge,https://agromart.ge,https://www.agromart.ge"). Optional: AGRO_MODEL, AGRO_EFFORT.
 // SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY are injected by Supabase and used for chat_logs.
 
 import Anthropic from "npm:@anthropic-ai/sdk@0.131.0";
@@ -12,7 +12,7 @@ import { KNOWLEDGE, RULES } from "./prompt.ts";
 
 const MODEL = Deno.env.get("AGRO_MODEL") ?? "claude-opus-5-5";
 const EFFORT = (Deno.env.get("AGRO_EFFORT") ?? "low") as "low" | "medium" | "high";
-const ORIGINS = (Deno.env.get("ALLOWED_ORIGINS") ?? "https://agromart.ge,https://www.agromart.ge")
+const ORIGINS = (Deno.env.get("ALLOWED_ORIGINS") ?? "https://shop.agromart.ge,https://agromart.ge,https://www.agromart.ge")
   .split(",").map((s) => s.trim()).filter(Boolean);
 
 const MAX_TURNS = 16;
