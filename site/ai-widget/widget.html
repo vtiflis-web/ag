@@ -1,0 +1,16 @@
+<button class="aifab" id="aiFab" type="button" hidden aria-expanded="false" aria-controls="aiPanel"><span class="aiav"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="42" cy="61" r="20" fill="none" stroke="#FFFFFF" stroke-width="12"/><rect x="56" y="38" width="12" height="44" rx="6" fill="#FFFFFF"/><path d="M62 40 C61 22 73 11 90 11 C91 28 80 40 62 40 Z" fill="#F5C518"/></svg></span><span class="lbl">აგრო AI</span></button>
+<section class="aipanel" id="aiPanel" hidden role="dialog" aria-labelledby="aiTitle">
+  <div class="aihead"><span class="aiav"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="42" cy="61" r="20" fill="none" stroke="#FFFFFF" stroke-width="12"/><rect x="56" y="38" width="12" height="44" rx="6" fill="#FFFFFF"/><path d="M62 40 C61 22 73 11 90 11 C91 28 80 40 62 40 Z" fill="#F5C518"/></svg></span><div><b id="aiTitle">აგრო AI</b><small>სასუქი, დოზა, მცენარის პრობლემები</small></div><button class="x" type="button" id="aiClose" aria-label="ჩატის დახურვა">×</button></div>
+  <div class="ailog" id="aiLog" aria-live="polite"></div>
+  <form class="aiform" id="aiForm">
+    <div class="aiprev" id="aiPrev" hidden></div>
+    <div class="airow">
+      <button class="aiib" type="button" id="aiPhoto" aria-label="მცენარის ფოტოს დამატება" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7.5h3l1.6-2.5h6.8L17 7.5h3a1.5 1.5 0 0 1 1.5 1.5v9A1.5 1.5 0 0 1 20 19.5H4A1.5 1.5 0 0 1 2.5 18V9A1.5 1.5 0 0 1 4 7.5z"/><circle cx="12" cy="13" r="3.6"/></svg></button>
+      <input type="file" id="aiFile" accept="image/jpeg,image/png,image/webp" hidden>
+      <label for="aiText" class="skip">შეკითხვა</label>
+      <textarea id="aiText" rows="1" maxlength="1500" placeholder="ჰკითხეთ მცენარეზე ან სასუქზე" autocomplete="off"></textarea>
+      <button class="aiib send" type="submit" id="aiSend" aria-label="გაგზავნა"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+    </div>
+    <p class="ainote">AI ასისტენტი შეიძლება შეცდეს. დოზა გადაამოწმეთ გეგმაში.</p>
+  </form>
+</section>
