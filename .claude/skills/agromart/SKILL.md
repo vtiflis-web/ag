@@ -92,4 +92,18 @@ description: Single source of truth for the owner's agro businesses (agromart.ge
 | `supabase/migrations/` | `chat_logs` |
 | `facebook/` | FB გვერდის პაკეტი, Cover/Profile, 9 პოსტი |
 | `agent/` | ავტონომიური აგენტი: არქიტექტურა, Routines-ის ინსტრუქციები |
+| `.claude/skills/yt-*` | YouTube სქილები (11), იხ. §8 |
+| `.claude/youtube/voice.md` | YouTube-ის voice-პროფილი (შესავსები) |
 | `agent/context/` | Claude Docs-ის დოკუმენტების ასლები (FreshCut ბრიფი, GHF კამპანია) |
+
+## 8. YouTube (`yt-*` სქილები)
+
+წყარო: [Jakeschincariol/youtube-agent-skill](https://github.com/Jakeschincariol/youtube-agent-skill) (MIT, commit `a2feb21`, 2026-09-16). 11 სქილი: `/yt-script` `/yt-package` `/yt-edit` `/yt-comment` `/yt-plan` `/yt-viral` `/yt-retention` `/yt-shorts` `/yt-seo` `/yt-chapters` `/yt-audit`. Python ხელსაწყოები მხოლოდ stdlib-ს იყენებენ, ქსელში არ გადიან და არაფერს აქვეყნებენ.
+
+| წესი | დეტალი |
+|---|---|
+| **voice.md** | სქილები `~/.claude/youtube/voice.md`-ს ეძებენ, მაგრამ cloud-ში ის იკარგება. წყარო არის რეპოს `.claude/youtube/voice.md`. სესიის დასაწყისში დააკოპირე: `mkdir -p ~/.claude/youtube && cp .claude/youtube/voice.md ~/.claude/youtube/` |
+| **ამ ფაილის წესები პრიორიტეტულია** | §2 (არ მოიგონო, A/B/C/D, ეკო, „GHF ორგანული არ არის“) და ბრენდი/ტონი ვრცელდება ყველა სკრიპტზე, სათაურზე და აღწერაზე |
+| **ქართული ტექსტი** | `hookscore.py` და `swipe.py` ინგლისურ სიტყვებზეა დაკალიბრებული. ქართულ hook-ზე სანდოა მხოლოდ SPECIFICITY და BREVITY, დანარჩენ ქულებს ნუ ენდობი. `title.py`-ის სიგრძის შემოწმება ენაზე არ არის დამოკიდებული |
+| **გამოქვეყნება** | სქილები არაფერს ტვირთავენ. ატვირთვა, კომენტარზე პასუხი და pin მხოლოდ მფლობელს შეუძლია (§2) |
+
